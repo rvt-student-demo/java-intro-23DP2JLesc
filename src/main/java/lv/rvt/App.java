@@ -8,7 +8,20 @@ public class App
     {
         Scanner scanner = new Scanner(System.in);
 
-        
+        System.out.println("Ievadi savu vārdu");
+
+        String name = scanner.nextLine();
+
+        System.out.println("Ievadi savu uzvārdu");
+
+        String surname = scanner.nextLine();
+
+        System.out.println("Ievadi savu grupu");
+
+        String group = scanner.nextLine();
+
+        System.out.println(name +' ' + surname + ' ' + group);
+
     }
 
 }
