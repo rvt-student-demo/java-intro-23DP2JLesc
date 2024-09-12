@@ -16,7 +16,20 @@ public class App
         int secondnumber = Integer.valueOf(scanner.nextLine());
 
         int result = firstnumber + secondnumber;
+
+        int result1 = firstnumber - secondnumber;
+
+        int result2 = firstnumber * secondnumber;
+
+        int result3 = firstnumber / secondnumber;
+
         System.out.println(firstnumber + " + " + secondnumber + " = " +result);
+
+        System.out.println(firstnumber + " - " + secondnumber + " = " +result1);
+
+        System.out.println(firstnumber + " * " + secondnumber + " = " +result2);
+
+        System.out.println(firstnumber + " / " + secondnumber + " = " +result3);
 
     }
 
