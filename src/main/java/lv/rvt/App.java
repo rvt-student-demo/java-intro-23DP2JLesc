@@ -9,33 +9,32 @@ public class App
         
         Scanner scanner = new Scanner(System.in);
 
-        System.out.println("Ievadi savus puktus 0-100");
+        System.out.println("Value of gift");
         int mark = Integer.valueOf(scanner.nextLine());
-        if (mark < 0) {
-            System.out.println("Grade: Inpossible!");
+        if (mark < 5000) {
+            System.out.println("No tax!");
         }
-        else if(mark <= 49){
-            System.out.println("Grade: failed");
+        else if(mark <= 25000){
+            double tax = (100+(mark - 5000)*0.08);
+            System.out.println("Tax: " + tax);
         }
-        else if(mark <= 59){
-            System.out.println("Grade: 1");
+        else if(mark <= 55000){
+            double tax = (1700+(mark - 25000)*0.10);
+            System.out.println("Tax: " + tax);
         }
-        else if(mark <= 69){
-            System.out.println("Grade: 2");
+        else if(mark <= 200000){
+            double tax = (4700+(mark - 55000)*0.12);
+            System.out.println("Tax: " + tax);
         }
-        else if(mark <= 79){
-            System.out.println("Grade: 3");
+        else if(mark <= 1000000){
+            double tax = (22100+(mark - 200000)*0.15);
+            System.out.println("Tax: " + tax);
         }
-        else if(mark <= 89){
-            System.out.println("Grade: 4");
+        else if(mark > 1000000){
+            double tax = (142100+(mark - 1000000)*0.17);
+            System.out.println("Tax: " + tax);
         }
-        else if(mark <= 100){
-            System.out.println("Grade: 5");
-        }
-        else if(mark > 100){
-            System.out.println("Grade: incredible!");
-        }
-
+        
     }
 
 }
