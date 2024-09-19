@@ -13,7 +13,7 @@ public class App
 
         if (number == 0) {
             System.out.println("0");
-            
+            break;
         }
 
         else if (number > 0) {
