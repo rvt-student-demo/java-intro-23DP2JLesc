@@ -2,29 +2,23 @@ package lv.rvt;
 
 import java.util.*;
 
-public class App 
+import java.util.Scanner;
+
+public class App
 {
-    public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
+public static void main( String[] args )
+{
+Scanner scanner = new Scanner(System.in);
 
-        while (true) {
-        System.out.println("Input numbers.");
-        int number = Integer.valueOf(scanner.nextLine());
-
-        if (number == 0) {
-            System.out.println("0");
-            break;
-        }
-
-        else if (number > 0) {
-            System.out.println(number*number);
-            
-        }
-        else if (number < 0) {
-            System.out.println("Unsuitable number");
-            
-        }
+System.out.println("How many times?");
+int number = Integer.valueOf(scanner.nextLine());
+int i = number;
+while(i > 0 ) {
+System.out.println("In a hole in the ground there lived a method");
+i = i - 1;
 }
 
-    }
+
+
+}
 }
