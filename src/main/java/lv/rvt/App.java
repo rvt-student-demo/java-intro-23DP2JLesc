@@ -6,19 +6,15 @@ import java.util.Scanner;
 
 public class App
 {
-public static void main( String[] args )
-{
-Scanner scanner = new Scanner(System.in);
-
-System.out.println("How many times?");
-int number = Integer.valueOf(scanner.nextLine());
-int i = number;
-while(i > 0 ) {
-System.out.println("In a hole in the ground there lived a method");
-i = i - 1;
-}
-
-
-
-}
+    public static void main(String[] args) {
+        printUntilNumber(5);
+       
+    }
+    public static void printUntilNumber(int first) {
+        int i = 1;
+        while(i != first+1){
+            System.out.println(i);
+            i++;
+        }
+    }
 }
