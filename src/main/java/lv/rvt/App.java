@@ -7,14 +7,15 @@ import java.util.Scanner;
 public class App
 {
     public static void main(String[] args) {
-        printUntilNumber(5);
+        printUntilNumber(5, 20);
        
     }
-    public static void printUntilNumber(int first) {
-        int i = 1;
-        while(i != first+1){
-            System.out.println(i);
-            i++;
+    public static void printUntilNumber(int first, int second) {
+        while(first != second){
+            if (first%3 == 0){
+                System.out.println(first);
+            }
+            first++;
         }
     }
 }
