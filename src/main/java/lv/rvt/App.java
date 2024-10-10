@@ -16,25 +16,13 @@ public class App{
         Stars.printStars(3);
         Stars.printStars(9);
 
-        Stars.printStars(0);
-        
-        Stars.printStars(4);
-        Stars.printStars(4);
-        Stars.printStars(4);
-        Stars.printStars(4);
+        Stars.printSquare(4);
 
-        Stars.printStars(0);
+        Stars.printRectangle(17, 3);
 
-        Stars.printStars(17);
-        Stars.printStars(17);
-        Stars.printStars(17);
+        Stars.printTriangle(0);
 
-        Stars.printStars(0);
-
-        Stars.printStars(1);
-        Stars.printStars(2);
-        Stars.printStars(3);
-        Stars.printStars(4);
+        Stars.printTriangle(4);
        
     }
     
