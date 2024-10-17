@@ -4,25 +4,23 @@ import java.util.*;
 
 public class App{
     public static void main(String[] args) {       
+        Random rand = new Random();
         Scanner scanner = new Scanner(System.in);
-        ArrayList<Integer> wordList = new ArrayList<>();
 
-        System.out.println();
+        int rand1 = rand.nextInt(10);
+
+        System.out.println("I am thinking of a number from 1 to 10.");
+        System.out.println("You must guess what it is in three tries.");
+        System.out.println("Enter a guess:");
         while(true){
-            String input = scanner.nextLine();
-            int a = Integer.valueOf(input);
-            if(a == 0) {
-                break;
-            }
-            wordList.add(a);
+        int guess = Integer.valueOf(scanner.nextLine());
+        if (guess != rand1 ){
+            System.out.println("Wrong");
         }
-        if (wordList.size() > 2){
-            int b = wordList.get(1) + wordList.get(2);
-            System.out.println(b);
-        } else{
-            System.out.println();
+        else{
+            System.out.println("Righ!");
+            break;
         }
-        scanner.close();
-    
+        }
     }
 }
