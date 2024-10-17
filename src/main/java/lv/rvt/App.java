@@ -14,8 +14,16 @@ public class App{
         System.out.println("Enter a guess:");
         while(true){
         int guess = Integer.valueOf(scanner.nextLine());
-        if (guess != rand1 ){
+        if (guess != rand1 && (rand1-guess >= 3 && guess-rand1  <= 3) ){
             System.out.println("Wrong");
+            System.out.println("cold");
+        }else if(guess != rand1 && (rand1-guess >= 2 && guess-rand1  <= 2) ){
+            System.out.println("Wrong");
+            System.out.println("warm");
+        }
+        else if(guess != rand1 && (rand1-guess >= 1 && guess-rand1  <= 1) ){
+            System.out.println("Wrong");
+            System.out.println("hot");
         }
         else{
             System.out.println("Righ!");
