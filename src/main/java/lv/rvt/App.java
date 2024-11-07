@@ -9,17 +9,28 @@ import lv.rvt.Statistics;
 
 public class App{
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        Statistics statistics = new Statistics();
+ 
+        PaymentCard paulsCard = new PaymentCard(20);
 
-        System.out.println("Enter numbers:");
-        int number = scanner.nextInt();
+        PaymentCard mattsCard = new PaymentCard(30);
 
-        while (number != -1) {
-            statistics.addNumber(number);
-            number = scanner.nextInt();
-        }
+        paulsCard.eatHeartily();
+        System.out.println("Paul: " + paulsCard);
 
-        System.out.println("Sum: " + statistics.sum());
+        mattsCard.eatAffordably();
+        System.out.println("Matt: " + mattsCard);
+
+        paulsCard.addMoney(20);
+        System.out.println("Paul: " + paulsCard);
+
+        mattsCard.eatHeartily();
+        System.out.println("Matt: " + mattsCard);
+
+        paulsCard.eatAffordably();
+        paulsCard.eatAffordably();
+        System.out.println("Paul: " + paulsCard);
+
+        mattsCard.addMoney(50);
+        System.out.println("Matt: " + mattsCard);
     }
 }
