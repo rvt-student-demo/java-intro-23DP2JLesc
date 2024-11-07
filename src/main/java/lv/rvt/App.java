@@ -5,13 +5,21 @@ import lv.rvt.Person;
 import lv.rvt.Product;
 import lv.rvt.DecreasingCounter;
 import lv.rvt.Agent;
+import lv.rvt.Statistics;
 
 public class App{
     public static void main(String[] args) {
-        Agent bond = new Agent("James", "Bond");
-        System.out.println(bond); 
+        Scanner scanner = new Scanner(System.in);
+        Statistics statistics = new Statistics();
 
-        Agent ionic = new Agent("Ionic", "Bond");
-        System.out.println(ionic); 
+        System.out.println("Enter numbers:");
+        int number = scanner.nextInt();
+
+        while (number != -1) {
+            statistics.addNumber(number);
+            number = scanner.nextInt();
+        }
+
+        System.out.println("Sum: " + statistics.sum());
     }
 }
