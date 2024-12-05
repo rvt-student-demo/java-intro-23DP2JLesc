@@ -1,6 +1,6 @@
 package lv.rvt;
 
-public class App {
+public class main {
 public static void main(String[] args) {
 PaymentTerminal unicafeExactum = new PaymentTerminal();
 System.out.println(unicafeExactum);
