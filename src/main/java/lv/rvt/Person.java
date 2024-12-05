@@ -3,23 +3,27 @@ package lv.rvt;
 public class Person {
     private String name;
     private int age;
-    private double height;
-    private double weight;
+    private int height;
+    private int weight;
 
-    public Person(String name, int age, double height, double weight) {
+    public Person(String name, int age, int height, int weight) {
         this.name = name;
         this.age = age;
         this.height = height;
         this.weight = weight;
     }
 
-    public int getAge() {
-        return age;
+    public String getName() {
+        return name;
     }
 
-    @Override
-    public String toString() {
-        return "Name: " + name + ", Age: " + age + ", Height: " + height + ", Weight: " + weight;
+    public int getWeight() {
+        return weight;
+    }
+
+    public void setWeight(int weight) {
+        this.weight = weight;
     }
 }
+
 
